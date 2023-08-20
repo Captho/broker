@@ -2,6 +2,8 @@
   margin: 0px;
   padding: 0px;
   font-family: "Poppins", sans-serif;
+  outline: none;
+  text-decoration: none;
 }
 h2 {
   font-size: 1.8rem;
@@ -22,6 +24,16 @@ p {
   font-size: 16px;
   font-weight: 400;
   text-align: center;
+}
+p a {
+  color: #c9a515;
+  font-size: 18px;
+  font-weight: 500;
+}
+a.fpass{
+  background-color: inherit;
+  margin: 0px;
+  color: #6571e0;
 }
 img {
   text-align: center;
@@ -51,6 +63,37 @@ a svg {
   margin-right: 20px;
   margin-bottom: 5px;
 }
+hr {
+  width: 4rem;
+  margin: 10px;
+}
+input{
+  width: 98%;
+  padding: 10px;
+  margin: 5px;
+  margin-left: -10px;
+  text-align: center;
+  font-weight: 500;
+  font-size: 17px;
+}
+button{
+  margin: 10px 0px;
+  padding: 12px 50px;
+  background-color: #fcd535;
+  color: #181a20;
+  text-align: center;
+  border-radius: 5px;
+  border: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  text-transform: capitalize;
+  font-weight: 700;
+  width: 100%;
+  outline: none;
+}
+
 div.opt {
   display: flex;
   flex-direction: row;
@@ -58,10 +101,6 @@ div.opt {
   justify-content: center;
   font-weight: 500;
   color: #a7a3a3;
-}
-hr {
-  width: 4rem;
-  margin: 10px;
 }
 div.social {
   display: flex;
@@ -82,7 +121,7 @@ div.social-box span {
   font-size: 1rem;
   font-weight: 700;
 }
-div.main{
+div.main {
   margin-top: 10%;
   display: flex;
   flex-direction: row;
@@ -90,16 +129,49 @@ div.main{
   align-items: center;
   gap: 40px;
 }
-div.sector{
+div.sector {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-div.sector div.main-content{
-  
+div.sector div.main-content {
 }
-div.sector div.content{
+div.sector div.content {
   text-align: center;
   width: 60%;
+}
+
+/* media query */
+/* Tablet design */
+@media (max-width: 990) {
+  /* div.sector{
+    width: fit-content;
+    margin-left: 20px;
+  } */
+  *{
+    margin: 0px;
+    padding: 0px;
+  }
+  div.main{
+    gap: 0px;
+  }
+  div.sector:first-child{
+    margin: 0px;
+  }
+  div.sector:first-child img{
+    margin: 0px;
+  }
+  form a{
+    margin: 0px;
+  }
+  form{
+    margin: 0px;
+  }
+}
+/* phone design */
+@media (max-width: 700px) {
+div.sector:last-child{
+  display: none;
+}
 }
